@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rsschool-cv-html</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">.
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./catalog/sheets/reset.css">
+    <link rel="stylesheet" href="./catalog/sheets/style.css">
+  
+</head>
+<body>
+    <div class="container-centered">
+    <div class="two-columns">
+    <div class="left-column">
+        <header>
+            <img src="./catalog/images/bart.jpg" alt="Portrait" width="204" height="204">
+            <h1>Bart Simpson</h1>
+            <h2>Junior Frontend Developer</h2>
+        </header>
+        <main>
+            <section class="contacts">
+                <h3>Contacts</h3>
+                <ul>
+                  <li>
+                    <img src="./catalog/images/phone.svg" alt="Phone Icon" width="30" height="30">
+                    <p>+78 (036) 88-73-987</p>
+                  </li>
+                  <li>
+                    <img src="./catalog/images/email.svg" alt="Email Icon" width="30" height="30">
+                    <p>bartsimpson@gmail.com</p>
+                  </li>
+                  <li>
+                    <img src="./catalog/images/telegram.svg" alt="Telegram Icon" width="30" height="30">
+                    <p>@bartsimpson</p>
+                  </li>
+                  <li>
+                    <img src="./catalog/images/linkedin.svg" alt="LinkedIn Icon" width="30" height="30">
+                    <a href="#">LinkedIn</a>
+                  </li>
+                </ul>
+              </section>
+              <section class="skills">
+                <h3>Skills</h3>
+                <ul>
+                  <li>HTML5, CSS3</li>
+                  <li>JavaScript Basics</li>
+                  <li>Git, GitHub</li>
+                  <li>VS Code, IntelliJ IDEA</li>
+                  <li>Adobe Photoshop</li>
+                  <li>Adobe Illustrator, InDesign</li>
+                </ul>
+              </section>
+              <section class="languages">
+                <h3>Languages</h3>
+                <ul>
+                  <li>
+                    <p class="language-name">English</p>
+                    <p>Elementary</p>
+                  </li>
+                  <li>
+                    <p class="language-name">Russian</p>
+                    <p>Native</p>
+                  </li>
+                </ul>
+              </section>
+        </main>
+    </div>
+    <aside class="right-column">
+        <section class="about-myself">
+          <div class="sub-header">
+            <img src="./catalog/images/icons8-customer-96.png" alt="About Myself Icon" width="30" height="30">
+            <h3>About Myself</h3>
+          </div>
+         <p>In 1990, Bart was included in the list of the hundred most intriguing people of the year by People magazine. 
+          The only animated character who received the same honor was Jessica Rabbit, the wife of Roger Rabbit (a curvaceous 
+          animated red-haired beauty from the semi-animated film "Who framed Roger Rabbit"). In 1998, Time magazine included 
+          Bart Simpson in the list of the hundred most influential people of the XX century at number 46, and he was the only 
+          fictional character on the list, for which there are many reasons.
+         <p>After the launch of the half-hour episodes of The Simpsons in 1989, Bart quickly became popular. He was distinguished 
+          from the children who had previously appeared in films and cartoons by his liveliness, authenticity, while they had an 
+          overly idealized character and seemed cardboard. The younger generation of the USA perceived Bart as a hero and role model, 
+          but adults found him a dangerous and unsuitable role model, so in many families children were forbidden to watch the cartoon. 
+          It also banned the sale of goods with Bart's image and quotes in some schools and other public places in the United States.</p> 
+</p>
+<p> Bart is a universally recognized symbol of rebellion, disobedience and opposition to authority.</p>
+        </section>
+        <section class="education">
+          <div class="sub-header">
+            <img src="./catalog/images/icons8-education-96.png" alt="Education Icon" width="35" height="35">
+            <h3>Education</h3>
+          </div>
+          <p><strong>Stanford University. Stanford, California 94305.</strong></p>
+          <p>Faculty Financial Activities</p>
+          <p>Years: 2009 - 2014</p>
+          <p>Specialization: Financial System & Reporting Authority, Bachelor's degree</p>
+        </section>
+        <section class="courses">
+          <div class="sub-header">
+            <img src="./catalog/images/icons8-refer-to-manual-96.png" alt="Courses" width="35" height="35">
+            <h3>Courses</h3>
+          </div>
+          <ul>
+            <li>HTML and CSS Tutorials on w3schools</li>
+            <li>JavaScript Manual on learnjavascript.ru</li>
+            <li>RS Schools «JavaScript/Front-end. Stage 0»</li>
+          </ul>
+          <img class="score-img" src="./catalog/images/presentation-png-pic.png" alt="W3schools Score" width="300">
+        </section>
+        <section class="code-example">
+          <div class="sub-header">
+            <img src="./catalog/images/icons8-source-code-96.png" alt="Code Icon" width="30" height="30">
+            <h3>Code example</h3>
+          </div>
+          <p><strong>Peak array index KATA from CODEWARS:</strong> Given an array of ints, return the index such that
+            the sum of the elements to the right of that index equals the sum of the elements to the
+            left of that index. If there is no such index, return -1. If there is more than one such index, return the
+            left-most index.</p>
+          <pre>
+            <code>
+function peak(arr) {
+
+  for (let i = 1; i &lt; arr.length - 1; i++) {
+    let leftSum = arr.slice(0, i).reduce((accumulator, currentValue) => accumulator + currentValue);
+    let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) => accumulator + currentValue);
+
+    if (leftSum === rightSum) return i;
+  }
+  return -1;
+}</code>
+          </pre>
+        </section>
+      </aside>
+</div>
+<footer>
+  <a class="my-github" href="https://github.com/LeslieLewiss">
+      <img class="github-icon" src="./catalog/images/github.svg" alt="Github Icon" width="26" height="26">
+      <p>Visit my GitHub</p>
+    </a>
+    <p>© 2022</p>
+    <a href="https://rs.school/js/">
+      <img src="./catalog/images/rsschool.svg" alt="Rsschool Icon" width="73" height="26">
+    </a>
+</footer>
+</div>
+   
+</body>
+</html>
+
+
