@@ -1,4 +1,5 @@
 # Bart Simpson
+![avatar](https://logoeps.com/wp-content/uploads/2013/01/bart-simpson-logo-vector1.png)
 ********* 
 ## Junior Frontend Developer
 ********* 
